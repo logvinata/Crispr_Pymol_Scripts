@@ -22,7 +22,7 @@ cmd.load(structure) #open structure
 #the error message is because pymol unsuccessfully tries to open the command line arguments as files.
 
 ##########################################################
-form pymol import cmd
+#from pymol import cmd #there is no need when lunching from pymol
 #import string
 
 #constants here
