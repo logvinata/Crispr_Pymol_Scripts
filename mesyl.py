@@ -59,6 +59,18 @@ cmd.do_select(sel p_atom) #this is empty selection named p_atom
 #note: pymol does not raise errors with wrong selections, just makes an empty one
 #need to check that the № of atoms in p_atom == 1
 
+"""
+sel s2, all & c. B & i. 6 #select residue 6 of chain B (RNA) from all str's
+sel s1, s2 & n. P #select phosphorus atom from residue
+center s1 #focus view on it
+#show spheres, s1 #display it as a sphere
+
+##
+#editor.attach_fragment('pk1','methane',1,0) #add methane to it
+
+show sticks, c. B &( i. 6 + i. 5 + i. 7) #this clearly shows phosphodiesterbonds and neighbour residues
+hide cartoon, c. B &( i. 6 + i. 5 + i. 7) # remove cartoon, show as didn't work
+"""
 
 #hope return will work this way
 return p_atom
